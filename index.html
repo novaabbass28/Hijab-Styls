@@ -81,6 +81,7 @@
       width: 240px;
       text-align: center;
       box-shadow: 0 6px 15px rgba(0,0,0,0.08);
+      position: relative;
       transition: transform 0.3s ease, box-shadow 0.3s ease;
     }
     .produk-card:hover {
@@ -104,6 +105,20 @@
     .produk-card a:hover {
       background: linear-gradient(135deg, #FF4081, #F50057);
       transform: scale(1.05);
+    }
+
+    /* Ribbon Best Seller */
+    .ribbon {
+      position: absolute;
+      top: 10px;
+      left: -5px;
+      background: #FF4081;
+      color: #fff;
+      padding: 5px 15px;
+      font-size: 0.8rem;
+      font-weight: 600;
+      transform: rotate(-15deg);
+      box-shadow: 0 2px 6px rgba(0,0,0,0.2);
     }
 
     /* Kontak Section */
@@ -156,6 +171,7 @@
     <div class="produk-container">
 
       <div class="produk-card">
+        <div class="ribbon">Best Seller</div>
         <img src="https://via.placeholder.com/220x220?text=Hijab+Satin+Pink" alt="Hijab Satin Pink">
         <h3>Hijab Satin Pink</h3>
         <p>Nyaman & elegan, cocok untuk semua acara.</p>
@@ -170,6 +186,7 @@
       </div>
 
       <div class="produk-card">
+        <div class="ribbon">Best Seller</div>
         <img src="https://via.placeholder.com/220x220?text=Hijab+Motif+Bunga" alt="Hijab Motif Bunga">
         <h3>Hijab Motif Bunga</h3>
         <p>Cantik, cocok untuk tampilan casual maupun formal.</p>
@@ -202,8 +219,8 @@
 
   <section id="kontak">
     <h2>Kontak Kami</h2>
-    <p>Email: info@hijabstyls.com</p>
-    <p>Instagram: @hijab.styls</p>
+    <p>Email: novaabbass@gmail.com</p>
+    <p>Instagram: @nvaabbass</p>
   </section>
 
   <footer>
