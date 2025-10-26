@@ -6,42 +6,68 @@
   <title>Hijab Styls - Koleksi Terbaru</title>
   <meta name="description" content="Koleksi terbaru hijab stylish, nyaman & elegan. Beli sekarang di Shopee!">
 
+  <!-- Link to FontAwesome for Icons (Email & Instagram) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
   <style>
     body {
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background: #f7f7f7;
+      background: #f4f4f9;
       color: #333;
       margin: 0;
       padding: 0;
     }
 
     header {
-      background: #ff5f5f;
-      color: white;
+      background: #fff;
+      color: #333;
       text-align: center;
-      padding: 20px 0;
-      font-size: 2rem;
-      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+      padding: 30px 20px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 20px;
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      color: #2d2d2d;
+      margin: 0;
+      flex-grow: 1;
+    }
+
+    header img {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      object-fit: cover;
     }
 
     nav a {
       margin: 0 15px;
       text-decoration: none;
-      color: #fff;
+      color: #666;
       font-weight: bold;
       font-size: 1.1rem;
+    }
+
+    nav a:hover {
+      color: #ff6f61;
     }
 
     section {
       padding: 40px 20px;
       text-align: center;
+      background: #fff;
     }
 
     h2 {
       font-size: 2rem;
       margin-bottom: 20px;
-      color: #ff5f5f;
+      color: #ff6f61;
       text-transform: uppercase;
+      font-weight: bold;
     }
 
     .produk-container {
@@ -80,7 +106,7 @@
 
     .produk-card h3 {
       font-size: 1.2rem;
-      color: #ff5f5f;
+      color: #333;
       margin: 10px 0;
     }
 
@@ -92,7 +118,7 @@
 
     .produk-card a {
       padding: 10px 20px;
-      background: #ff5f5f;
+      background: #ff6f61;
       color: white;
       text-decoration: none;
       font-size: 1rem;
@@ -101,23 +127,40 @@
     }
 
     .produk-card a:hover {
-      background: #ff2a2a;
+      background: #ff4d3b;
     }
 
     footer {
-      background: #ff5f5f;
-      color: white;
+      background: #fff;
+      color: #333;
       text-align: center;
-      padding: 15px 0;
-      position: absolute;
-      bottom: 0;
-      width: 100%;
+      padding: 20px 10px;
+      box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.1);
+      margin-top: 40px;
+    }
+
+    .kontak-icons {
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      margin-top: 10px;
+    }
+
+    .kontak-icons a {
+      font-size: 1.5rem;
+      color: #333;
+      transition: color 0.3s ease;
+    }
+
+    .kontak-icons a:hover {
+      color: #ff6f61;
     }
   </style>
 </head>
 
 <body>
   <header>
+    <img src="https://via.placeholder.com/50" alt="Logo Hijab Styls">
     <h1>Hijab Styls</h1>
     <nav>
       <a href="#produk">Produk</a>
@@ -180,12 +223,8 @@
 
   <section id="kontak">
     <h2>Kontak Kami</h2>
-    <p>Email: novaabbass28@gmail.com</p>
-    <p>Instagram: nvaabbass</p>
-  </section>
+    <p>Email: <a href="mailto:novaabbass28@gmail.com">novaabbass28@gmail.com</a></p>
+    <p>Instagram: <a href="https://www.instagram.com/nvaabbass/" target="_blank" rel="noopener">@nvaabbass</a></p>
 
-  <footer>
-    <p>&copy; 2025 Hijab Styls</p>
-  </footer>
-</body>
-</html>
+    <div class="kontak-icons">
+      <a href="mailto:novaabb
