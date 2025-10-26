@@ -16,58 +16,57 @@
       color: #333;
       margin: 0;
       padding: 0;
-      line-height: 1.6;
     }
 
-    /* Header */
     header {
       background: #ff6f61; /* Warna utama */
-      color: white;
+      color: #fff;
       text-align: center;
-      padding: 40px 20px;
+      padding: 30px 20px;
       box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 20px;
     }
 
     header h1 {
-      font-size: 3rem;
-      font-weight: bold;
-      letter-spacing: 2px;
+      font-size: 2.5rem;
       margin: 0;
-      text-transform: uppercase;
+      flex-grow: 1;
     }
 
     header img {
-      width: 80px;
-      height: 80px;
+      width: 50px;
+      height: 50px;
       border-radius: 50%;
-      margin-bottom: 20px;
+      object-fit: cover;
     }
 
     nav a {
-      margin: 0 20px;
+      margin: 0 15px;
       text-decoration: none;
-      color: white;
-      font-size: 1.1rem;
+      color: #fff;
       font-weight: bold;
+      font-size: 1.1rem;
     }
 
     nav a:hover {
-      color: #ffbb91;
+      color: #ffbb91; /* Warna highlight saat hover */
     }
 
-    /* Produk Section */
     section {
-      padding: 50px 20px;
+      padding: 40px 20px;
       text-align: center;
-      background-color: #fff;
+      background: #fff;
     }
 
     h2 {
-      font-size: 2.5rem;
-      margin-bottom: 30px;
+      font-size: 2rem;
+      margin-bottom: 20px;
       color: #ff6f61;
-      font-weight: bold;
       text-transform: uppercase;
+      font-weight: bold;
     }
 
     .produk-container {
@@ -79,14 +78,13 @@
     }
 
     .produk-card {
-      background: white;
+      background: #fff;
       width: 250px;
       border-radius: 10px;
       box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
       padding: 20px;
       text-align: center;
       transition: transform 0.3s ease, box-shadow 0.3s ease;
-      cursor: pointer;
     }
 
     .produk-card img {
@@ -131,10 +129,9 @@
       background: #ff4d3b;
     }
 
-    /* Footer */
     footer {
       background: #ff6f61;
-      color: white;
+      color: #fff;
       text-align: center;
       padding: 20px 10px;
       box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.1);
@@ -154,12 +151,12 @@
     .kontak-icons {
       display: flex;
       justify-content: center;
-      gap: 25px;
+      gap: 15px;
       margin-top: 10px;
     }
 
     .kontak-icons a {
-      font-size: 1.7rem;
+      font-size: 1.5rem;
       color: #fff;
       transition: color 0.3s ease;
     }
@@ -167,18 +164,12 @@
     .kontak-icons a:hover {
       color: #ffbb91;
     }
-
-    .footer-info {
-      font-size: 0.9rem;
-      color: #ddd;
-      margin-top: 10px;
-    }
   </style>
 </head>
 
 <body>
   <header>
-    <img src="https://via.placeholder.com/80" alt="Logo Hijab Styls">
+    <img src="https://via.placeholder.com/50" alt="Logo Hijab Styls">
     <h1>Hijab Styls</h1>
     <nav>
       <a href="#produk">Produk</a>
@@ -212,24 +203,33 @@
         <p>Cantik, cocok untuk tampilan casual maupun formal.</p>
         <a href="https://s.shopee.co.id/6AchZBpAp7" target="_blank" rel="nofollow">Beli di Shopee</a>
       </div>
+
+      <!-- Hijab Polos Premium -->
+      <div class="produk-card">
+        <img src="https://via.placeholder.com/220x220?text=Hijab+Polos+Premium" alt="Hijab Polos Premium">
+        <h3>Hijab Polos Premium</h3>
+        <p>Lembut & nyaman, pilihan terbaik untuk tampilan elegan.</p>
+        <a href="https://s.shopee.co.id/AKSGWy5or7" target="_blank" rel="nofollow">Beli di Shopee</a>
+      </div>
+
+      <!-- Hijab Motif Abstrak -->
+      <div class="produk-card">
+        <img src="https://via.placeholder.com/220x220?text=Hijab+Motif+Abstrak" alt="Hijab Motif Abstrak">
+        <h3>Hijab Motif Abstrak</h3>
+        <p>Motif modern & unik, cocok untuk tampilan stylish.</p>
+        <a href="https://s.shopee.co.id/5AkANWsWb6" target="_blank" rel="nofollow">Beli di Shopee</a>
+      </div>
+
+      <!-- Hijab Chiffon Premium -->
+      <div class="produk-card">
+        <img src="https://via.placeholder.com/220x220?text=Hijab+Chiffon+Premium" alt="Hijab Chiffon Premium">
+        <h3>Hijab Chiffon Premium</h3>
+        <p>Ringan & lembut, nyaman dipakai seharian.</p>
+        <a href="https://s.shopee.co.id/30ffncU5my" target="_blank" rel="nofollow">Beli di Shopee</a>
+      </div>
     </div>
   </section>
 
-  <section id="kontak">
-    <h2>Kontak Kami</h2>
-    <p>Hubungi kami melalui:</p>
-    <div class="kontak-icons">
-      <a href="mailto:novaabbass28@gmail.com" title="Email">
-        <i class="fas fa-envelope"></i>
-      </a>
-      <a href="https://www.instagram.com/nvaabbass/" target="_blank" title="Instagram">
-        <i class="fab fa-instagram"></i>
-      </a>
-    </div>
-    <div class="footer-info">
-      <p>&copy; 2025 Hijab Styls. All rights reserved.</p>
-    </div>
-  </footer>
-
-</body>
-</html>
+  <footer>
+    <p>&copy; 2025 Hijab Styls. All rights reserved.</p>
+    <
