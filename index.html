@@ -12,35 +12,25 @@
   <style>
     body {
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background: #f9f9f9;
+      background: #f0f4f7;
       color: #333;
       margin: 0;
       padding: 0;
     }
 
     header {
-      background: #ff6f61; /* Warna utama */
-      color: #fff;
+      background: url('https://via.placeholder.com/1600x500?text=Hijab+Styls') no-repeat center center/cover; /* Gambar background */
+      color: white;
       text-align: center;
-      padding: 30px 20px;
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      gap: 20px;
+      padding: 80px 0;
+      font-size: 2.5rem;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      position: relative;
     }
 
     header h1 {
-      font-size: 2.5rem;
-      margin: 0;
-      flex-grow: 1;
-    }
-
-    header img {
-      width: 50px;
-      height: 50px;
-      border-radius: 50%;
-      object-fit: cover;
+      font-size: 3rem;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
     }
 
     nav a {
@@ -51,22 +41,16 @@
       font-size: 1.1rem;
     }
 
-    nav a:hover {
-      color: #ffbb91; /* Warna highlight saat hover */
-    }
-
     section {
       padding: 40px 20px;
       text-align: center;
-      background: #fff;
     }
 
     h2 {
       font-size: 2rem;
       margin-bottom: 20px;
-      color: #ff6f61;
+      color: #ff5f5f;
       text-transform: uppercase;
-      font-weight: bold;
     }
 
     .produk-container {
@@ -105,7 +89,7 @@
 
     .produk-card h3 {
       font-size: 1.2rem;
-      color: #333;
+      color: #ff5f5f;
       margin: 10px 0;
     }
 
@@ -117,7 +101,7 @@
 
     .produk-card a {
       padding: 10px 20px;
-      background: #ff6f61;
+      background: #ff5f5f;
       color: white;
       text-decoration: none;
       font-size: 1rem;
@@ -126,50 +110,46 @@
     }
 
     .produk-card a:hover {
-      background: #ff4d3b;
+      background: #ff2a2a;
     }
 
     footer {
-      background: #ff6f61;
-      color: #fff;
+      background: #ff5f5f;
+      color: white;
       text-align: center;
-      padding: 20px 10px;
-      box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.1);
-      margin-top: 40px;
-    }
-
-    footer a {
-      color: #fff;
-      text-decoration: none;
-      font-size: 1rem;
-    }
-
-    footer a:hover {
-      color: #ffbb91;
+      padding: 15px 0;
+      position: relative;
+      bottom: 0;
+      width: 100%;
     }
 
     .kontak-icons {
       display: flex;
       justify-content: center;
-      gap: 15px;
-      margin-top: 10px;
+      gap: 20px;
+      margin-top: 20px;
     }
 
     .kontak-icons a {
       font-size: 1.5rem;
-      color: #fff;
+      color: white;
       transition: color 0.3s ease;
     }
 
     .kontak-icons a:hover {
-      color: #ffbb91;
+      color: #ff2a2a;
     }
+
+    .footer-text {
+      font-size: 0.9rem;
+      margin-top: 10px;
+    }
+
   </style>
 </head>
 
 <body>
   <header>
-    <img src="https://via.placeholder.com/50" alt="Logo Hijab Styls">
     <h1>Hijab Styls</h1>
     <nav>
       <a href="#produk">Produk</a>
@@ -230,6 +210,19 @@
     </div>
   </section>
 
+  <section id="kontak">
+    <h2>Kontak Kami</h2>
+    <div class="kontak-icons">
+      <a href="mailto:novaabbass@gmail.com" target="_blank" rel="noopener noreferrer">
+        <i class="fas fa-envelope"></i> Email
+      </a>
+      <a href="https://instagram.com/nvaabbass" target="_blank"
+</a>
+    </div>
+  </section>
+
   <footer>
-    <p>&copy; 2025 Hijab Styls. All rights reserved.</p>
-    <
+    <p>&copy; 2025 Hijab Styls</p>
+  </footer>
+</body>
+</html>
