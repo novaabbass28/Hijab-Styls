@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Hijab Styls - Koleksi Terbaru</title>
-  <meta name="description" content="Koleksi terbaru hijab stylish, nyaman & elegan. Beli sekarang di Shopee!">
+  <title>Hijab Styls ala Nova - Koleksi Terbaru</title>
+  <meta name="description" content="Koleksi hijab stylish ala Nova, nyaman & elegan. Beli sekarang di Shopee!">
 
   <!-- Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"></script>
@@ -16,30 +16,44 @@
   </script>
 
   <style>
-    /* Font modern */
     @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
 
-    body {
-      font-family: 'Poppins', sans-serif;
+    body { font-family: 'Poppins', sans-serif; margin: 0; padding: 0; background: #FFF5F8; color: #333; }
+    
+    /* Hero Section */
+    .hero {
+      position: relative;
+      width: 100%;
+      height: 400px;
+      background: url('https://via.placeholder.com/1200x400?text=Hijab+Stylish') center/cover no-repeat;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #fff;
+      text-align: center;
+    }
+    .hero::after {
+      content: "";
+      position: absolute;
+      top:0; left:0; right:0; bottom:0;
+      background: rgba(0,0,0,0.35);
+    }
+    .hero h1 {
+      position: relative;
+      font-size: 3rem;
+      z-index: 1;
+      color: #FFF;
       margin: 0;
-      padding: 0;
-      background: #FFF5F8;
-      color: #333;
     }
 
-    header, footer {
+    /* Header Nav */
+    header {
       background: #F48FB1;
       color: #880E4F;
-      padding: 25px 20px;
+      padding: 15px 20px;
       text-align: center;
       box-shadow: 0 2px 6px rgba(0,0,0,0.1);
     }
-
-    header h1 {
-      font-size: 2.5rem;
-      margin: 0;
-    }
-
     nav a {
       margin: 0 15px;
       text-decoration: none;
@@ -48,30 +62,18 @@
       font-size: 1rem;
       transition: color 0.3s;
     }
+    nav a:hover { color: #FF4081; text-decoration: underline; }
 
-    nav a:hover {
-      color: #FF4081;
-      text-decoration: underline;
-    }
+    section { padding: 50px 20px; }
+    h2 { text-align: center; margin-bottom: 40px; font-size: 2rem; color: #880E4F; }
 
-    section {
-      padding: 50px 20px;
-    }
-
-    h2 {
-      text-align: center;
-      margin-bottom: 40px;
-      font-size: 2rem;
-      color: #880E4F;
-    }
-
+    /* Produk Cards */
     .produk-container {
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
       gap: 25px;
     }
-
     .produk-card {
       background: #fff;
       border-radius: 20px;
@@ -81,30 +83,13 @@
       box-shadow: 0 6px 15px rgba(0,0,0,0.08);
       transition: transform 0.3s ease, box-shadow 0.3s ease;
     }
-
     .produk-card:hover {
       transform: translateY(-8px);
       box-shadow: 0 12px 25px rgba(0,0,0,0.15);
     }
-
-    .produk-card img {
-      width: 100%;
-      border-bottom: 1px solid #F8BBD0;
-    }
-
-    .produk-card h3 {
-      font-size: 1.25rem;
-      color: #880E4F;
-      margin: 15px 0 10px;
-    }
-
-    .produk-card p {
-      font-size: 0.95rem;
-      color: #555;
-      margin: 0 15px 15px;
-      line-height: 1.4;
-    }
-
+    .produk-card img { width: 100%; border-bottom: 1px solid #F8BBD0; }
+    .produk-card h3 { font-size: 1.25rem; color: #880E4F; margin: 15px 0 10px; }
+    .produk-card p { font-size: 0.95rem; color: #555; margin: 0 15px 15px; line-height: 1.4; }
     .produk-card a {
       display: inline-block;
       margin-bottom: 20px;
@@ -116,49 +101,55 @@
       font-weight: 600;
       transition: background 0.3s ease, transform 0.2s ease;
     }
-
     .produk-card a:hover {
       background: linear-gradient(135deg, #FF4081, #F50057);
       transform: scale(1.05);
     }
 
+    /* Kontak Section */
     #kontak {
+      display:flex;
+      flex-direction:column;
+      align-items:center;
+      justify-content:center;
+      text-align:center;
+      padding:50px 20px;
+      background:#FFF0F5;
+      border-radius:15px;
+      margin:40px auto;
+      max-width:600px;
+    }
+    #kontak h2 { color:#880E4F; margin-bottom:25px; }
+    #kontak p { margin:8px 0; font-size:1rem; color:#555; }
+
+    footer {
       text-align: center;
+      padding: 20px;
+      background: #F48FB1;
+      color: #880E4F;
     }
 
-    #kontak p {
-      margin: 8px 0;
-      font-size: 1rem;
-      color: #555;
-    }
-
-    footer p {
-      margin: 0;
-      font-size: 0.95rem;
-    }
-
-    /* Responsive Mobile */
+    /* Responsive */
     @media(max-width:600px){
-      .produk-container {
-        flex-direction: column;
-        align-items: center;
-      }
-
-      .produk-card {
-        width: 90%;
-      }
+      .produk-container { flex-direction: column; align-items: center; }
+      .produk-card { width: 90%; }
+      .hero { height: 300px; }
+      .hero h1 { font-size: 2rem; }
     }
   </style>
 </head>
 <body>
 
   <header>
-    <h1>Hijab Styls</h1>
     <nav>
       <a href="#produk">Produk</a>
       <a href="#kontak">Kontak</a>
     </nav>
   </header>
+
+  <div class="hero">
+    <h1>Hijab Styls ala Nova</h1>
+  </div>
 
   <section id="produk">
     <h2>Koleksi Hijab Terbaru</h2>
@@ -216,7 +207,7 @@
   </section>
 
   <footer>
-    <p>&copy; 2025 Hijab Styls</p>
+    <p>&copy; 2025 Hijab Styls ala Nova</p>
   </footer>
 
 </body>
